@@ -36,5 +36,10 @@ public class User {
 				.addValue(zipCode)
 				.toString();
 	}
+	
+	  public int hashCode()  
+	  {  
+	     return Objects.hashCode(this.lastName, this.firstName, this.age, this.gender, this.occupation,this.zipCode);  
+	  }
 
 }
